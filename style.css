@@ -1,0 +1,172 @@
+/** {
+}
+:root {
+  font-size: clamp(16px, calc(1rem + ((1vw - 3.6px) * 1.1905)), 26px);
+  min-height: 0vw;
+}*/
+
+.gapXL {
+	height: 4em;
+}
+
+body {
+  margin: 50px ;	
+  padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+
+h1 {
+font-weight: 700;
+font-style: normal;
+font-size:2.0em ;
+margin: 0;
+
+@media (max-width: 700px) {
+	font-size: 1.7em;
+}
+
+
+
+
+}
+.bro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.aboutMe {
+	display: flex;
+	gap: 35px;
+}
+
+
+section{
+width: 1200px;
+
+}
+
+img {
+	max-width: 100%;
+	display: block;
+
+
+}
+
+			.aboutMe {
+
+				@media (max-width: 860px) {
+					flex-direction: column;
+				}
+
+			}	
+
+
+.aboutMeTxt {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+}
+
+.aboutMeImg {
+	flex-basis: 70%;
+	background-image: url("https://avatars.mds.yandex.net/i?id=54b828bc325102b8b66ac1510bd9762c_l-13468156-images-thumbs&n=13");
+	background-position: 50% 50%;
+
+
+
+}
+
+
+.descrLinks {
+
+	display: flex;
+	gap: 1em;
+}
+a {
+color: rgba(13, 146, 244);
+text-decoration-thickness: 0.5px;
+text-underline-offset: 6px;
+text-decoration-color: rgba(13, 146, 244, 0.4);
+transition: color 0.4s ease-in-out, text-decoretion-color 0.4s ease-in-out ;
+margin-top: 35px;
+}
+
+a:hover {
+color: rgb(249, 84, 84);
+text-decoration-color: rgba(249, 84, 84, 0.4);
+transition: color 0s, text-decoration-color 0s ;
+}
+
+
+
+ .flex{
+	font-weight: 500px;
+  font-style: normal; 
+  font-size: 3em;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+
+
+ p, a {
+ 	font-size: 1.5em;
+ 
+ }
+
+ h2 {
+ 	font-size: 2.5em;
+  margin-top: 70px;
+  font-weight: 150;
+  font-style: normal;
+  margin: 0;
+ }
+
+
+
+/**/
+
+.grid {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(6, minmax(80px, 100px));
+}
+
+.grid > div:nth-child(1) {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url("img/banana.png");
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+
+.grid > div:nth-child(2) {
+	background-image: url("img/splash.jpg");
+	grid-row-start: 3;
+	grid-row-end: 7;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	background-size: 140%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 0.2em;
+}
+
+.grid > div:nth-child(3) {
+	background-image: url("img/woman.jpg");
+	grid-row-start: 3;
+	grid-row-end: 7;
+	grid-column-start: 5;
+	grid-column-end: 9;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 35% 0%;
+}
